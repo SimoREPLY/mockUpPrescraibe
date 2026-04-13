@@ -181,7 +181,7 @@ const PrescrAIbeFlow: React.FC = () => {
 
                         <div style={{ padding: '20px', textAlign: 'center', borderBottom: '1px solid #1e293b' }}>
                           <h2 style={{ fontSize: '1.25rem', color: '#34d399', margin: '0 0 8px 0' }}>Classe di Priorità: B</h2>
-                          <p style={{ fontSize: '0.85rem', color: '#94a3b8', margin: 0 }}>Urgente — tempo massimo di attesa: 10 giorni</p>
+                          <p style={{ fontSize: '0.85rem', color: '#94a3b8', margin: 0 }}>Breve — tempo massimo di attesa: 10 giorni</p>
                         </div>
 
                         <div style={{ padding: '16px' }}>
