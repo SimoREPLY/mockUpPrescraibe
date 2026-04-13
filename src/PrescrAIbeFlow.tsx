@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Activity, Clock, AlertCircle, MessageSquare, CheckCircle2 } from 'lucide-react';
+import { Send, Activity, Clock, CheckCircle2 } from 'lucide-react';
 import './index.css';
 
 // --- Types ---
