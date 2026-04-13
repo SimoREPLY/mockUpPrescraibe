@@ -26,6 +26,53 @@
     border-bottom: 1px solid #1e293b;
 }
 
+/* Nuove classi per la Cronologia Sidebar */
+.history-section {
+    flex: 1;
+    padding: 1.5rem 1rem;
+    overflow-y: auto;
+}
+
+.history-title {
+    font-size: 10px;
+    font-weight: 800;
+    color: #64748b;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 0.5px;
+}
+
+.history-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.history-item:hover {
+    background-color: rgba(51, 65, 85, 0.5);
+    color: #cbd5e1;
+}
+
+.history-item.active {
+    background-color: rgba(59, 130, 246, 0.1);
+    border-left: 3px solid #3b82f6;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+}
+
 .main-chat {
     flex: 1;
     display: flex;
@@ -92,14 +139,6 @@
     width: 100%;
 }
 
-.form-group-label {
-    font-size: 10px;
-    font-weight: 800;
-    color: #64748b;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
 .option-btn {
     width: 100%;
     text-align: left;
@@ -114,25 +153,13 @@
     align-items: center;
     gap: 10px;
     font-size: 0.85rem;
+    transition: all 0.2s;
 }
 
 .option-btn.selected {
     border-color: #3b82f6;
     background: rgba(59, 130, 246, 0.1);
     color: #fff;
-}
-
-.radio-circle {
-    width: 14px;
-    height: 14px;
-    border: 1px solid #475569;
-    border-radius: 50%;
-    flex-shrink: 0;
-}
-
-.selected .radio-circle {
-    border-color: #3b82f6;
-    border-width: 4px;
 }
 
 .submit-btn {
@@ -145,10 +172,7 @@
     font-weight: bold;
     margin-top: 1rem;
     cursor: pointer;
-}
-
-.submit-btn:disabled {
-    opacity: 0.3;
+    transition: background 0.2s;
 }
 
 /* Card Risultato Finale */
@@ -186,7 +210,7 @@
     width: 100%;
     background: #1e293b;
     border: 1px solid #334155;
-    padding: 1rem;
+    padding: 1rem 3rem 1rem 1rem;
     border-radius: 12px;
     color: #fff;
     outline: none;
@@ -203,4 +227,9 @@
     border-radius: 8px;
     color: #fff;
     cursor: pointer;
+    transition: background 0.2s;
+}
+
+.send-btn:hover:not(:disabled) {
+    background: #3b82f6;
 }
